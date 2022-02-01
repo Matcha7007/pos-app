@@ -1,0 +1,71 @@
+.container {
+    background-color: #454d55;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: lightgray;
+    flex-basis: 50%;
+    height: 60%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 2px 0px rgba(10, 9, 10, 0.2), 0px 1px 2px 0px rgb(0 0 0 / 14%), 2px 3px 3px 3px rgb(0 0 0 / 12%);
+    display: flex;
+}
+
+.box .box-left {
+    flex: 1.2;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1641238215950-9e0435966e20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.box .box-right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+    .form {
+        height: 100%;
+        padding: 30px;
+        flex: 1;
+    }
+}
+
+.form mat-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: none;
+
+    .full-width {
+        width: 100%;
+    }
+
+    mat-card-title{
+        color: #F92C85;
+    }
+
+    button:hover {
+        background-color: #F92C85;
+        color: white;
+    }
+
+}

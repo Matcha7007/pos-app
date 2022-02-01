@@ -1,0 +1,43 @@
+mat-toolbar{
+    background-color: #343a40;
+    color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    font-size: 1em;
+    padding: 0 2rem;
+}
+
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}
+
+mat-icon:hover {
+    color: whitesmoke;
+    background-color: #3f3f3f;
+}
+
+mat-toolbar .logo, .nav {
+    flex: 1;
+}
+
+.nav button{
+    float: right;
+}
+
+.logo {
+
+    button {
+
+        .chevron-button {
+            transition: 300ms ease-in-out;
+            transform: rotate(0deg);
+        }
+
+        .chevron-button.rotated {
+            transform: rotate(180deg);
+        }
+    }
+}

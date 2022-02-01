@@ -1,0 +1,83 @@
+
+.hide{
+    display: none;
+}
+
+/* mat-table */
+mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style: italic;
+}
+
+/* filter controls */
+.search-div{
+    margin: 10px;
+}
+.search-form-field{
+    width: 60%;
+    margin-left: 10px;
+    padding: 0px 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: black;
+}
+.search-form-field div.mat-form-field-underline {
+    display: none;
+}
+.search-form-field div.mat-form-field-infix{
+    border-top: 0px;
+}
+.search-form-field div.mat-form-field-wrapper{
+padding-bottom: 0px;
+}
+.search-form-field div.mat-form-field-suffix button{
+    height: 32px;
+    width: 32px;
+}
+
+.mat-column-id, .mat-column-kode_provinsi, 
+.mat-column-kode_kabupaten_kota, 
+.mat-column-satuan, .mat-column-tahun,
+.mat-column-nama_provinsi, .mat-column-nama_kabupaten_kota, 
+.mat-column-produksi_tomat
+{
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.mat-column-id, .mat-column-kode_provinsi, 
+.mat-column-kode_kabupaten_kota, 
+.mat-column-satuan, .mat-column-tahun
+{
+    justify-content: center;
+    max-width: 100px;
+}
+
+.mat-column-produksi_tomat
+{
+    justify-content: center;
+    max-width: 150px;
+}
+
+.mat-column-actions {
+    justify-content: center;
+    max-width: 150px;
+}
+
+.mat-column-nama_provinsi, .mat-column-nama_kabupaten_kota
+{
+    justify-content: center;
+}
+
+.mat-cell.mat-cell.cdk-cell.cdk-column-nama_kabupaten_kota.mat-column-nama_kabupaten_kota.ng-star-inserted,
+.mat-cell.mat-cell.cdk-cell.cdk-column-nama_provinsi.mat-column-nama_provinsi.ng-star-inserted
+{
+    justify-content: left;
+}
+
+.mat-cell.mat-cell.cdk-cell.cdk-column-produksi_tomat.mat-column-produksi_tomat.ng-star-inserted
+{
+    justify-content: right;
+    // margin-right: 50px;
+}

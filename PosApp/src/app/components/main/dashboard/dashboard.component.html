@@ -1,0 +1,30 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav #sidenav role="navigation" mode="side" opened>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="app-header">
+            <app-header (sidenavToggle)="sidenav.toggle()" ></app-header>
+        </div>
+        <div class="main">
+            <div class="title">
+                <span>Title</span>
+            </div>
+            <div class="box-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <div class="app-footer">
+            <app-footer></app-footer>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <div class="container">
+    <div class="side">Side</div>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="main-content">Main</div>
+        <div class="footer">Footer</div>
+    </div>
+</div> -->

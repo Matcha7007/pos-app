@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active{
+    color: gray;
+}
+
+.nav-caption{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 2px;
+    width: 100px;
+    left: 0;
+    font-size: 0.9em;
+}
+
+.sidenav-header {
+    padding: 10px 20px;
+    height: 40px;
+}
+
+mat-nav-list {
+    color: lightgrey;
+
+}
+
+mat-nav-list a{
+    color: lightgrey;
+
+    mat-icon {
+        padding-left: 5px;
+    }
+
+    span {
+        text-align: left;
+    }
+}
+
+.expand-menu{
+    text-indent: 10px;
+    transition: 1s ease-in-out;
+    animation-name: slideDown;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-2%);
+    }
+    20% {
+        transform: translateY(-1.5%);
+    }
+    40% {
+        transform: translateY(-1%);
+    }
+    60% {
+        transform: translateY(-0.5%);
+    }
+    80% {
+        transform: translateY(-0.75%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.up-icon {
+    transition: 0.2s ease-out;
+}
+
+.icon {
+    animation-name: icon;
+    transform: rotate(90deg);
+    transition: 0.2s ease-out;
+}
+
+mat-nav-list a:hover, mat-nav-list a:active {
+    color: whitesmoke;
+    background-color: #454d55;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.avatar {
+    margin-top: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+}

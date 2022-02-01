@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.custom-modalbox {
+    mat-dialog-container {
+        padding: 0;
+    }
+}
+
+.mat-cell.mat-cell.cdk-cell.cdk-column-id.mat-column-id.ng-star-inserted, 
+.mat-header-cell.mat-sort-header.mat-header-cell.cdk-header-cell.ng-tns-c206-4.cdk-column-id.mat-column-id.ng-star-inserted,
+.mat-cell.mat-cell.cdk-cell.cdk-column-actions.mat-column-actions.ng-star-inserted,
+.mat-header-cell.mat-header-cell.cdk-header-cell.cdk-column-actions.mat-column-actions.ng-star-inserted
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}

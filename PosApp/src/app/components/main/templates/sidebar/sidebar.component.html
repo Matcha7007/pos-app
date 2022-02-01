@@ -1,0 +1,155 @@
+<mat-nav-list [@popState]="stateName">
+    <img class="avatar mat-elevation-z8" 
+        src="https://source.unsplash.com/c_GmwfHBDzk/200x200" 
+        (click)="toggle()"  
+        />
+
+    <h4 class="name">{{isExpanded ? loggedinUser : initialUser}}</h4>
+    <p class="designation" *ngIf="isExpanded">{{userRole}}</p>
+
+    <mat-divider></mat-divider>
+
+    <div class="list-menu">
+        <a mat-list-item routerLink="/main" id="a1" (click)="show('a1')">
+            <mat-icon>home</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Home</span>
+            <!-- <mat-icon *ngIf="isExpanded" class="up-icon" [class.icon]="id === 'a1'">arrow_right</mat-icon> -->
+        </a>
+        <!-- <div class="expand-menu" *ngIf="id === 'a1'">
+            <a mat-list-item routerLink="/main">
+                <mat-icon>home</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Home</span>
+            </a>
+        </div> -->
+    </div>
+    <div class="list-menu">
+        <a mat-list-item  id="a2" (click)="show('a2')">
+            <mat-icon>source</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Master</span>
+            <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a2'">arrow_right</mat-icon>
+        </a>
+        <div class="expand-menu" *ngIf="id === 'a2'">
+            <a mat-list-item routerLink="/main/add-payment">
+                <mat-icon>payment</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Add Payment</span>
+            </a>
+            <a mat-list-item routerLink="/main/add-unit">
+                <mat-icon>ad_units</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Add Unit</span>
+            </a>
+            <a mat-list-item routerLink="/main/data">
+                <mat-icon>source</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Data</span>
+            </a>
+            <a mat-list-item routerLink="/main/customer">
+                <mat-icon>contacts</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Customer</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-menu">
+        <a mat-list-item id="a3" (click)="show('a3')">
+            <mat-icon>point_of_sale</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Transaction</span>
+            <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a3'">arrow_right</mat-icon>
+        </a>
+        <div class="expand-menu" *ngIf="id === 'a3'">
+            <a mat-list-item routerLink="/main/selling">
+                <mat-icon>shopping_cart</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Selling</span>
+            </a>
+            <a mat-list-item routerLink="/main/purchasing">
+                <mat-icon>local_mall</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Purchasing</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-menu">
+        <a mat-list-item routerLink="/main" id="a4" (click)="show('a4')">
+            <mat-icon>paid</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Repayment</span>
+            <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a4'">arrow_right</mat-icon>
+        </a>
+        <div class="expand-menu" *ngIf="id === 'a4'">
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-menu">
+        <a mat-list-item routerLink="/main" id="a5" (click)="show('a5')">
+            <mat-icon>groups</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Employee</span>
+            <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a5'">arrow_right</mat-icon>
+        </a>
+        <div class="expand-menu" *ngIf="id === 'a5'">
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-menu">
+        <a mat-list-item routerLink="/main" id="a6" (click)="show('a6')">
+            <mat-icon>summarize</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Report</span>
+            <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a6'">arrow_right</mat-icon>
+        </a>
+        <div class="expand-menu" *ngIf="id === 'a6'">
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+        </div>
+    </div>
+    <div class="list-menu">
+        <a mat-list-item routerLink="/main" id="a7" (click)="onInfo()">
+            <mat-icon>info</mat-icon>
+            <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            <!-- <mat-icon *ngIf="isExpanded" [class.icon]="id === 'a7'">arrow_right</mat-icon> -->
+        </a>
+        <!-- <div class="expand-menu" *ngIf="id === 'a7'">
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+            <a mat-list-item routerLink="/main">
+                <mat-icon>important_devices</mat-icon>
+                <span class="nav-caption" *ngIf="isExpanded">Info</span>
+            </a>
+        </div> -->
+    </div>
+
+    <mat-divider></mat-divider>
+</mat-nav-list>
+
+<!-- (click)="onSidenavClose()" -->

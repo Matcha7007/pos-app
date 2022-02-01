@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="box">
+        <div class="box-left">
+            
+        </div>
+        <div class="box-right">
+            <div class="form">
+                <mat-card>
+                    <mat-card-title>Welcome Back!</mat-card-title>
+                    <span>Please signin to your account</span>
+                    <br>
+                      <form #loginForm = 'ngForm' (ngSubmit)="onLogin(loginForm)">
+                        <mat-card-content>
+                            <mat-form-field class="full-width" appearance="outline">
+                              <mat-label>Username</mat-label>
+                              <input type="text" matInput required ngModel name="userName">
+                              <mat-icon matSuffix>person</mat-icon>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                              <mat-label>Password</mat-label>
+                              <input matInput [type]="hide ? 'password' : 'text'" 
+                                required type="password" ngModel name="password">
+                              <button mat-icon-button matSuffix (click)="hide = !hide">
+                                <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                              </button>
+                            </mat-form-field>
+                            <button class="full-width" type="submit" mat-flat-button
+                              [disabled]="loginForm.invalid">Sign In</button>
+                            <!-- <button class="full-width" type="button" mat-flat-button>Cancel</button> -->
+                        </mat-card-content>
+                      </form>
+                  </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

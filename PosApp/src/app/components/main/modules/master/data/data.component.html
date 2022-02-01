@@ -1,0 +1,79 @@
+<div class="search-div">
+  <button mat-raised-button>
+    <mat-icon>add</mat-icon>Create
+  </button>
+  <mat-form-field class="search-form-field" floatLabel="never">
+    <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+    <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="searchKey"  (click)="onSearchClear()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<div class="mat-elevation-z8">
+  <mat-table [dataSource]="listData"  matSort class="data-table">
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef  mat-sort-header>ID</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.id}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="kode_provinsi">
+      <mat-header-cell *matHeaderCellDef  mat-sort-header></mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.kode_provinsi}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nama_provinsi">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>PROVINSI</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.nama_provinsi}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="kode_kabupaten_kota">
+      <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.kode_kabupaten_kota}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nama_kabupaten_kota">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>KABUPATEN / KOTA</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.nama_kabupaten_kota}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="produksi_tomat">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>PRODUKSI TOMAT</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.produksi_tomat}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="satuan">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>SATUAN</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.satuan}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="tahun">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>TAHUN</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.tahun}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        <button mat-icon-button><mat-icon>launch</mat-icon></button>
+        <button mat-icon-button color="warn"><mat-icon>delete_outline</mat-icon></button>
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="loading">
+      <mat-footer-cell *matFooterCellDef colspan="6">
+        Loading data...
+      </mat-footer-cell>
+    </ng-container>
+    <ng-container matColumnDef="noData">
+      <mat-footer-cell *matFooterCellDef colspan="6">
+        No data.
+      </mat-footer-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-footer-row *matFooterRowDef="['loading']" [ngClass]="{'hide':listData!=null}"></mat-footer-row>
+    <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(listData!=null && listData.data.length==0)}"></mat-footer-row>
+  </mat-table>
+  <mat-paginator [pageSizeOptions]="[25, 50, 100]" [pageSize]="25" showFirstLastButtons></mat-paginator>
+</div>
+
+<!-- 
+<h2>
+    Country list from local json file...
+</h2>
+<ul *ngFor="let item of dataList">
+   <li>
+      <h3>Kode Kota :{{item.kode_kabupaten_kota}}, Nama Kota : {{item.nama_kabupaten_kota}}</h3>
+   </li>
+</ul> -->

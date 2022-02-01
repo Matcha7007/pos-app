@@ -1,0 +1,128 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    //box-shadow: 0px 3px 2px 0px rgba(34, 34, 34, 0.2), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 1px rgb(0 0 0 / 12%);
+}
+
+.container .info-satu {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    // background-color: #343a40;
+}
+
+.container .info-dua {
+    flex: 5;
+    display: flex;
+    background-color: honeydew;
+}
+
+.info-satu .box {
+    flex: 1;
+    background-color: honeydew;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.content {
+    flex: 4;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    gap: 10px;
+}
+
+.content .content-left .number {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+
+.content .content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    flex-direction: column;
+    padding-right: 15%;
+}
+
+.content-right div mat-icon {
+    flex: 1;
+    transform: scale(3);
+    padding-right: 5px;
+    padding-top: 1px;
+}
+
+.content-info {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content-info button {
+    flex: 1;
+    border-radius: 0;
+    height: 10;
+    font-size: small;
+    font-weight: normal;
+}
+
+.box.satu .content {
+    background-color: #3498db;
+    .content-right div mat-icon {
+        color: #2f89c5;
+    }
+}
+.box.satu .content-info {
+    background-color: #2f89c5;
+}
+
+.box.dua .content {
+    background-color: #00bc8c;
+    .content-right div mat-icon {
+        color: #00a97e;
+    }
+}
+.box.dua .content-info {
+    background-color: #00a97e;
+}
+
+.box.tiga .content {
+    background-color: #f39c12;
+    .content-right div mat-icon {
+        color: #da8c10;
+    }
+}
+.box.tiga .content-info {
+    background-color: #da8c10;
+
+}
+
+.box.empat .content {
+    background-color: #e74c3c;
+    .content-right div mat-icon {
+        color: #cf4436;
+    }
+}
+.box.empat .content-info {
+    background-color: #cf4436;
+}
+

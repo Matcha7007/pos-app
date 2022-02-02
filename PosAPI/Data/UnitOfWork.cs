@@ -20,6 +20,9 @@ namespace PosAPI.Data
         public ISupplierRepository SupplierRepository =>
             new SupplierRepository(dc);
 
+        public IDevisionRepository DevisionRepository =>
+            new DevisionRepository(dc);
+
         public async Task<bool> SaveAsync()
         {
             return await dc.SaveChangesAsync() > 0;

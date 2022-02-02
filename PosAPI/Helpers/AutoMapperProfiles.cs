@@ -11,6 +11,7 @@ namespace PosAPI.Helpers
         {
             CreateMap<Customer, CustomerDto>().ReverseMap();
             CreateMap<Supplier, SupplierDto>().ReverseMap();
+            CreateMap<Devision, DevisionDto>().ReverseMap();
         }
     }
 }

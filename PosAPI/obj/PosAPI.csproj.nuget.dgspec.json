@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\flex\\PosAPI\\PosAPI.csproj": {}
+    "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj": {}
   },
   "projects": {
-    "D:\\Project\\flex\\PosAPI\\PosAPI.csproj": {
+    "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\flex\\PosAPI\\PosAPI.csproj",
+        "projectUniqueName": "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj",
         "projectName": "PosAPI",
-        "projectPath": "D:\\Project\\flex\\PosAPI\\PosAPI.csproj",
+        "projectPath": "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj",
         "packagesPath": "C:\\Users\\match\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\flex\\PosAPI\\obj\\",
+        "outputPath": "D:\\Project\\pos-app\\PosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\match\\AppData\\Roaming\\NuGet\\NuGet.Config",

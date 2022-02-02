@@ -9,5 +9,6 @@ namespace PosAPI.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options){}
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -13,7 +13,10 @@ namespace PosAPI.Data
         }
         public ICustomerRepository CustomerRepository =>
             new CustomerRepository(dc);
-        
+
+        public IUserRepository UserRepository =>
+            new UserRepository(dc);
+
         public async Task<bool> SaveAsync()
         {
             return await dc.SaveChangesAsync() > 0;

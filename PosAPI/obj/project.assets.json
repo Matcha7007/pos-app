@@ -5725,11 +5725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Project\\flex\\PosAPI\\PosAPI.csproj",
+      "projectUniqueName": "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj",
       "projectName": "PosAPI",
-      "projectPath": "d:\\Project\\flex\\PosAPI\\PosAPI.csproj",
+      "projectPath": "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj",
       "packagesPath": "C:\\Users\\match\\.nuget\\packages\\",
-      "outputPath": "d:\\Project\\flex\\PosAPI\\obj\\",
+      "outputPath": "D:\\Project\\pos-app\\PosAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\match\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -76,7 +76,10 @@ namespace PosAPI
             app.ConfigureExceptionHandler(env);
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "web_api v1"));
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "web_api v1");
+                c.InjectStylesheet("/CSS/custom.css");
+            });
 
             app.UseRouting();
 

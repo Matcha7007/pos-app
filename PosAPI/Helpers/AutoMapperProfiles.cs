@@ -10,6 +10,7 @@ namespace PosAPI.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<Customer, CustomerDto>().ReverseMap();
+            CreateMap<Supplier, SupplierDto>().ReverseMap();
         }
     }
 }

@@ -5,6 +5,7 @@ namespace PosAPI.Interfaces
     public interface IUnitOfWork
     {
         ICustomerRepository CustomerRepository { get; }
+        ISupplierRepository SupplierRepository { get; }
         IUserRepository UserRepository { get; }
         Task<bool> SaveAsync();
     }

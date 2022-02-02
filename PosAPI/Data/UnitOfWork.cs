@@ -23,6 +23,9 @@ namespace PosAPI.Data
         public IDevisionRepository DevisionRepository =>
             new DevisionRepository(dc);
 
+        public IPaymentRepository PaymentRepository =>
+            new PaymentRepository(dc);
+
         public async Task<bool> SaveAsync()
         {
             return await dc.SaveChangesAsync() > 0;

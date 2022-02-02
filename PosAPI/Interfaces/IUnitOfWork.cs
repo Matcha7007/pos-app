@@ -8,6 +8,7 @@ namespace PosAPI.Interfaces
         ISupplierRepository SupplierRepository { get; }
         IUserRepository UserRepository { get; }
         IDevisionRepository DevisionRepository { get; }
+        IPaymentRepository PaymentRepository { get; }
         Task<bool> SaveAsync();
     }
 }

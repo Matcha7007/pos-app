@@ -26,6 +26,9 @@ namespace PosAPI.Data
         public IPaymentRepository PaymentRepository =>
             new PaymentRepository(dc);
 
+        public IDenomRepository DenomRepository =>
+            new DenomRepository(dc);
+
         public async Task<bool> SaveAsync()
         {
             return await dc.SaveChangesAsync() > 0;

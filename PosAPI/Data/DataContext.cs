@@ -12,6 +12,7 @@ namespace PosAPI.Data
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Devision> Devisions { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Denom> Denoms { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }

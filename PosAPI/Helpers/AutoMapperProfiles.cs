@@ -1,4 +1,3 @@
-using System.Linq;
 using AutoMapper;
 using PosAPI.Dtos;
 using PosAPI.Models;
@@ -13,6 +12,7 @@ namespace PosAPI.Helpers
             CreateMap<Supplier, SupplierDto>().ReverseMap();
             CreateMap<Devision, DevisionDto>().ReverseMap();
             CreateMap<Payment, PaymentDto>().ReverseMap();
+            CreateMap<Denom, DenomDto>().ReverseMap();
         }
     }
 }

@@ -9,6 +9,7 @@ namespace PosAPI.Interfaces
         IUserRepository UserRepository { get; }
         IDevisionRepository DevisionRepository { get; }
         IPaymentRepository PaymentRepository { get; }
+        IDenomRepository DenomRepository { get; }
         Task<bool> SaveAsync();
     }
 }

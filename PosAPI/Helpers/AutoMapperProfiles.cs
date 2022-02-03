@@ -13,6 +13,7 @@ namespace PosAPI.Helpers
             CreateMap<Devision, DevisionDto>().ReverseMap();
             CreateMap<Payment, PaymentDto>().ReverseMap();
             CreateMap<Denom, DenomDto>().ReverseMap();
+            CreateMap<Inventory, InventoryDto>().ReverseMap();
         }
     }
 }

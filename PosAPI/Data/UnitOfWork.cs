@@ -29,6 +29,9 @@ namespace PosAPI.Data
         public IDenomRepository DenomRepository =>
             new DenomRepository(dc);
 
+        public IInventoryRepository InventoryRepository =>
+            new InventoryRepository(dc);
+
         public async Task<bool> SaveAsync()
         {
             return await dc.SaveChangesAsync() > 0;

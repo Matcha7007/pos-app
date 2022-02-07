@@ -34,11 +34,11 @@ export class AuthService {
   }
 
   authUser(user: UserForLogin) {
-    return this.http.post(this.baseUrl + 'User/login', user);
+    return this.http.post(this.baseUrl + 'User/signin', user);
   }
 
   registerUser(user: UserForRegister) {
-    return this.http.post(this.baseUrl + 'User/register', user);
+    return this.http.post(this.baseUrl + 'User/signup', user);
   }
 
 }

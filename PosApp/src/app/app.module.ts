@@ -16,6 +16,7 @@ import { PopUpFailedComponent } from './dialogs/pop-up-failed/pop-up-failed.comp
 import { PopUpWarningComponent } from './dialogs/pop-up-warning/pop-up-warning.component';
 import { AlertComponent } from './dialogs/alert/alert.component';
 import { DataService } from './services/data.service';
+import { CustomerService } from './services/customer.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DataService } from './services/data.service';
   ],
   providers: [
     AuthService,
-    DataService
+    DataService,
+    CustomerService
   ],
   bootstrap: [AppComponent]
 })

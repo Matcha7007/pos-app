@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jo2e1AEhBJ7gxA51eGOO1Y+we5tOXz2+1C9XkzXEuuOjI/kc6Nv1Z+JvM1jI2Tfi/0gEL23ANcC1/lozW2GgZw==",
+  "dgSpecHash": "4XssSEUEYV4Tl5xP6SrVWV1cOIxQxVEc7KujVcDLZFeJpSq3fR6KdbFoxmtRyBuE6tH6u/eORaLv2k5MywKTMQ==",
   "success": true,
-  "projectFilePath": "D:\\Project\\pos-app\\PosAPI\\PosAPI.csproj",
+  "projectFilePath": "D:\\Project\\pos-app\\posapi\\PosAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\match\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\match\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

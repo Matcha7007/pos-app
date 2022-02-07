@@ -30,8 +30,10 @@ export class DataComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    console.log(this.dataList)
     this.listData = new MatTableDataSource<DataTomat>(this.dataList);
     this.listData.filterPredicate = (data, filter) => {
+      console.log(data + " | " + filter);
       return this.displayedColumns.some(ele => {
         return ele != 'actions' && data[ele as keyof DataTomat].toString().toLowerCase().indexOf(filter) != -1;
       });
